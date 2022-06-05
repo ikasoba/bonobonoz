@@ -34,7 +34,7 @@
     <section>
       
       <div class="content-wrap">
-        <time datetime="{% page.date | date_to_xmlschema %}">
+        <time datetime="{{ page.date | date_to_xmlschema }}">
           {{ page.date | date: "%Y/%m/%d %H:%M:%S" }} の記事
         </time>
         <div class="content">
