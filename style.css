@@ -4,7 +4,7 @@ body {                          /*背景のグラデーションのやつ*/
   background-size: cover;
 }
 .thumbnail {                    /*枠*/
-    width: 22.3333%;            /* 幅指定 */
+    width: 22.333%;            /* 幅指定 */
     display:  inline-block;     /* インラインブロック要素にする */
     vertical-align:  top;       /* 要素を上揃えにする */
     background-color:  #f0ffff; /*BOXの色指定*/
@@ -17,9 +17,13 @@ body {                          /*背景のグラデーションのやつ*/
   width: 100%;            /* 幅指定 */
   display:  inline-block;     /* インラインブロック要素にする */
   vertical-align:  top;       /* 要素を上揃えにする */
-  background-color:  #f0ffff; /*BOXの色指定*/
+  background-color:  #fff0f5; /*BOXの色指定*/
   opacity: 0.6;
   margin-bottom: 10px;        /* 要素同士の隙間調整 */
   padding:  10px;             /* 余白指定 */
   box-sizing: border-box;     /* 崩れ防止 */
+}
+img.side_image1 {
+  float: left;
+  margin-right: 10px;
 }
