@@ -34,11 +34,13 @@
     <section>
       
       <div class="content-wrap">
+        <div class="content-title">
         {% if page.date != nil %}
           <time datetime="{{ page.date | date_to_xmlschema }}">
             {{ page.date | date: "%Y/%m/%d %H:%M:%S" }} の記事
           </time>
         {% endif %}
+        </div>
         <div class="content">
           {{ page.content }}
         </div>
