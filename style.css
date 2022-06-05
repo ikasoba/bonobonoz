@@ -56,3 +56,14 @@ img.side_image1 {
   /* filter: opacity(0.5); */
   min-width: 8rem;
 }
+
+.posts {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.page-thumbnail {
+  display: flex;
+  flex-direction: column;
+}

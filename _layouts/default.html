@@ -34,13 +34,29 @@
     <section>
       
       <div class="content-wrap">
-        <time datetime="{{ page.date | date_to_xmlschema }}">
-          {{ page.date | date: "%Y/%m/%d %H:%M:%S" }} の記事
-        </time>
+        {% if page.date != nil %}
+          <time datetime="{{ page.date | date_to_xmlschema }}">
+            {{ page.date | date: "%Y/%m/%d %H:%M:%S" }} の記事
+          </time>
+        {% endif %}
         <div class="content">
           {{ page.content }}
         </div>
       </div>
+      {% if page.next != nil or page.previous != nil %}
+        <div class="next-prev-button-wrap">
+          {% if page.next != nil %}
+            <a href="{{ page.next }}">次</a>
+          {% endif %}
+          {% if page.previous != nil %}
+            <a href="{{ page.preious }}">前</a>
+          {% endif %}
+        </div>
+      {% endif %}
+      
+      {% if page.is_page == true %}
+        {% include pages.html %}
+      {% endif %}
 
     </section>
   </body>
