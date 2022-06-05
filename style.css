@@ -38,7 +38,7 @@ body {
   background-color: var(--main-color);
   /* opacity: 0.6; */
   /* margin: 0.5rem; */
-  padding: 10px;
+  padding: 1rem;
   box-sizing: border-box;
   /* aspect-ratio: 2/1; */
   min-width: 16rem;
@@ -50,8 +50,8 @@ body {
   vertical-align:  top;       /* 要素を上揃えにする */
   background-color: var(--main-color); /*BOXの色指定*/
   /* opacity: 0.6; */
-  margin-bottom: 10px;        /* 要素同士の隙間調整 */
-  padding:  10px;             /* 余白指定 */
+  margin-bottom: 1rem;        /* 要素同士の隙間調整 */
+  padding:  1rem;             /* 余白指定 */
   box-sizing: border-box;     /* 崩れ防止 */
 }
 
@@ -75,4 +75,6 @@ img.side_image1 {
 .page-thumbnail {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+  background-color: var(--main-color);
 }
