@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <title>{% site.title %}</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="thumbnail">
+        <h2>Discord コミュニティー</h2>
+        <a href="https://discord.gg/KHKp9xunNS"target="_blank"><p>ぼのぼの雑談</p></a>
+        <a href="https://discord.gg/PfTxvehcYe"target="_blank"><p>Eval() プログラムコミュ</p></a>
+      </div>
+      <div class="thumbnail">
+        <h2>YouTube</h2>
+        <a href="https://www.youtube.com/channel/UCMZTthJFKECnfHLFhpRLbHQ/videos"target="_blank"><p>ぼのぼの雑談YouTube</p></a>
+        <a href="https://www.youtube.com/channel/UCW7o5hSNiUTPrajyD47OxAQ/videos"target="_blank"><p>Enter BOX</p></a>
+      </div>
+      <div class="thumbnail">
+        <h2>おすすめフリーソフト</h2>
+        <a href="https://code.visualstudio.com/?wt.mc_id=vscom_downloads"target="_blank"><p>Visual Studio Code</p></a>
+        <a href="https://eartrumpet.app/"target="_blank"><p>EarTrumpet</p></a>
+      </div>
+      <div class="thumbnail">
+        <h2>発売予定のギャルゲー</h2>
+        <a href="http://galgame.aoba-e.info/schedule/"target="_blank"><p>ギャルゲーガーデン</p></a>
+        <a href="https://www.famitsu.com/schedule/?theme=13"target="_blank"><p>ファミ通</p></a>
+      </div>
+    </header>
+    <section>
+      
+      <div class="content-wrap">
+        <time datetime="{% page.date | date_to_xmlschema %}">
+          {% page.date | date: "%Y/%m/%d %H:%M:%S" %} の記事
+        </time>
+        <div class="content">
+          {% page.content %}
+        </div>
+      </div>
+
+    </section>
+  </body>
+</html>
