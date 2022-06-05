@@ -1,29 +1,56 @@
-body {                          /*背景のグラデーションのやつ*/
-  background: linear-gradient(-90deg, rgba(246, 255, 0, .8), rgba(255, 0, 161, .8)),
-  url(images/bg-cherrybrossam.jpg);
-  background-size: cover;
+body {
+  background-size: 100vw 100vh;
+  background: linear-gradient(-90deg, rgba(255, 0, 161, .8), rgba(246, 255, 0, .8), rgba(255, 0, 161, .8), rgba(246, 255, 0, .8), rgba(255, 0, 161, .8));
+  animation: 15s linear infinite mvbg;
 }
-.thumbnail {                    /*枠*/
-    width: 22.333%;            /* 幅指定 */
-    display:  inline-block;     /* インラインブロック要素にする */
-    vertical-align:  top;       /* 要素を上揃えにする */
-    background-color:  #f0ffff; /*BOXの色指定*/
-    opacity: 0.6;
-    margin-bottom: 10px;        /* 要素同士の隙間調整 */
-    padding:  10px;             /* 余白指定 */
-    box-sizing: border-box;     /* 崩れ防止 */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 10px;
+  /* flex-wrap: wrap; */
+  overflow: auto;
+}
+
+.flex-row-gap-0\.5 {
+  display: flex;
+  gap: 0.5rem;
+}
+
+@keyframes mvbg {
+  0% {
+    background-position: 0vw 0vh;
+  }
+  100% {
+    background-position: 100vw 0vh;
+  }
+}
+
+.thumbnail {
+  width: 100%;
+  /* display: inline-block; */
+  /* vertical-align: top; */
+  background-color: #f0ffff90;
+  /* opacity: 0.6; */
+  /* margin: 0.5rem; */
+  padding: 10px;
+  box-sizing: border-box;
+  /* aspect-ratio: 2/1; */
+  min-width: 16rem;
 }
 .thumbnail2 {                    /*枠*/
   width: 100%;            /* 幅指定 */
   display:  inline-block;     /* インラインブロック要素にする */
   vertical-align:  top;       /* 要素を上揃えにする */
-  background-color:  #fff0f5; /*BOXの色指定*/
-  opacity: 0.6;
+  background-color: #fff0f590; /*BOXの色指定*/
+  /* opacity: 0.6; */
   margin-bottom: 10px;        /* 要素同士の隙間調整 */
   padding:  10px;             /* 余白指定 */
   box-sizing: border-box;     /* 崩れ防止 */
 }
 img.side_image1 {
-  float: left;
-  margin-right: 10px;
+  opacity: 0.8;
+  /* filter: opacity(0.5); */
+  min-width: 8rem;
 }
