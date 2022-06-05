@@ -39,7 +39,8 @@ body {
   /* aspect-ratio: 2/1; */
   min-width: 16rem;
 }
-.thumbnail2 {                    /*枠*/
+
+.content-wrap {                    /*枠*/
   width: 100%;            /* 幅指定 */
   display:  inline-block;     /* インラインブロック要素にする */
   vertical-align:  top;       /* 要素を上揃えにする */
@@ -49,6 +50,7 @@ body {
   padding:  10px;             /* 余白指定 */
   box-sizing: border-box;     /* 崩れ防止 */
 }
+
 img.side_image1 {
   opacity: 0.8;
   /* filter: opacity(0.5); */
