@@ -1,3 +1,7 @@
+html {
+  --main-color: f0ffff90;
+}
+
 body {
   background-size: 200vw 200vh;
   background: linear-gradient(-90deg, rgba(255, 0, 161, .8), rgba(246, 255, 0, .8), rgba(255, 0, 161, .8));
@@ -31,7 +35,7 @@ body {
   width: 100%;
   /* display: inline-block; */
   /* vertical-align: top; */
-  background-color: #f0ffff90;
+  background-color: var(--main-color);
   /* opacity: 0.6; */
   /* margin: 0.5rem; */
   padding: 10px;
@@ -44,7 +48,7 @@ body {
   width: 100%;            /* 幅指定 */
   display:  inline-block;     /* インラインブロック要素にする */
   vertical-align:  top;       /* 要素を上揃えにする */
-  background-color: #fff0f590; /*BOXの色指定*/
+  background-color: var(--main-color); /*BOXの色指定*/
   /* opacity: 0.6; */
   margin-bottom: 10px;        /* 要素同士の隙間調整 */
   padding:  10px;             /* 余白指定 */
