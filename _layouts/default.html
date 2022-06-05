@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" type="text/css" />
     <title>
-      {% site.title %}
+      {{ site.title }}
     </title>
   </head>
   <body>
@@ -35,10 +35,10 @@
       
       <div class="content-wrap">
         <time datetime="{% page.date | date_to_xmlschema %}">
-          {% page.date | date: "%Y/%m/%d %H:%M:%S" %} の記事
+          {{ page.date | date: "%Y/%m/%d %H:%M:%S" }} の記事
         </time>
         <div class="content">
-          {% page.content %}
+          {{ page.content }}
         </div>
       </div>
 
